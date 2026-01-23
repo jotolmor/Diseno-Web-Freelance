@@ -1,3 +1,16 @@
+
+:root{
+    --main: #eff5fa;
+    --primario: #ffba13;
+    --secundario: #008c9a;
+    --gris: #696969;
+    --oscuro: #212121;
+    --blanco: #ffffff;
+    --fuente: @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+    
+    
+}
 html{
     font-size: 65.5%;
 }
