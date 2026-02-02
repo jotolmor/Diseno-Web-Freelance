@@ -65,7 +65,7 @@ h1, h2, h3{
     font-size: 3rem;
 }
 .hero{
-    background: url(../img/banner_hero.png) center/cover no-repeat;
+    background: url(../img/banner_1240x400_hero_noblur.webp) center/cover no-repeat;
     height: 400px;
     
 }
