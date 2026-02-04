@@ -4,6 +4,7 @@
     --primario: #ffba13;
     --secundario: #008c9a;
     --gris: #696969;
+    --gris-claro: #dfe9f3;
     --oscuro: #212121;
     --blanco: #ffffff;
     --fuente: 'DM Sans', sans-serif;
@@ -22,21 +23,31 @@ body{
     font-size: 1.5rem; /* 1rem = 10px*/
     color: var(--oscuro);
     font-family: var(--fuente);
+    background-image: linear-gradient(to top, var(--gris-claro) 0%, var(--blanco) 100%);
     
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8;
 }
 h1, h2, h3{
     font-family: var(--titulos);
-}
-.titulo{
     text-align: center;
-    font-size: 5rem;
 }
+
 .titulo span{
     font-size: 2rem;
 }
 .contenedor{
     max-width: 120 rem;
     margin: 0 auto;
+    
    
 }
 .nav-bg{
@@ -77,18 +88,49 @@ h1, h2, h3{
     background-repeat: no-repeat;
     color: var(--blanco);
     height: 450px;
-    padding: 21px;
     position: relative;
 }
 .contenido-hero{
     position: absolute;
-    top: 0;
-    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.contenido-hero a{
+.ubicacion p, .boton{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ubicacion p::before{
+    content: url(/img/map-pin.svg);
+    padding: 1rem;
+}
+
+.boton{
     color: var(--blanco);
     text-decoration: none;
+    background-color: var(--secundario);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+.boton:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.contenedor-main{
+    max-width: 50%;
+    margin: 2rem auto;
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    box-shadow: -3px 11px 15px 7px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; /* Agrega esta línea para organizar los elementos en una columna */
+    align-items: center; /* Agrega esta línea para centrar horizontalmente */
+    justify-content: center; /* Agrega esta línea para centrar verticalmente */
 }
