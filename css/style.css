@@ -1,3 +1,4 @@
+/* Codigo CSS general para el sitio web de Jorge Toledo Moreno Freelance */
 
 :root{
     --main: #eff5fa;
@@ -33,13 +34,17 @@ h1{
 h2{
     font-size: 2.8rem;
 }
-h3{
+h3, .titulo2{
     font-size: 1.8rem;
 }
-h1, h2, h3{
+h1, h2, h3, .titulo2{
     font-family: var(--titulos);
     text-align: center;
 }
+
+/*Fin*/
+
+/* Header */
 
 .titulo span{
     font-size: 2rem;
@@ -48,6 +53,11 @@ h1, h2, h3{
     max-width: 120 rem;
     margin: 0 auto;
 }
+
+/* Fin*/
+
+/* Navegacion Principal */
+
 .nav-bg{
     background-color: var(--secundario);
 }
@@ -74,6 +84,10 @@ h1, h2, h3{
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
+
+/* Fin */
+
+/* Hero Banner */
 
 .hero{
     background-image: url(../img/banner_1240x400_hero_noblur.webp);
@@ -117,6 +131,10 @@ h1, h2, h3{
     color: var(--oscuro);
 }
 
+/* Fin */
+
+/* Contenedor Servicios Main */
+
 .contenedor-main{
     max-width: 65%;
     padding: 2rem;
@@ -146,10 +164,12 @@ h1, h2, h3{
    align-items: center;
    justify-content: center;
 }
-.servicios, .servicio h3{
-    font-weight: normal;
+.servicio h3{
+    font-size: 1.5rem;
+    font-weight: 100;
     text-align: center;
     padding: 1rem;
+    color: var(--secundario);
 }
 .servicio p{
     text-align: center;
@@ -167,3 +187,6 @@ h1, h2, h3{
     margin: 0 auto;
 
 }
+
+
+/* Fin */
