@@ -103,34 +103,38 @@
     <!--Formulario Contacto-->
         <section>
             <h2 class="titulo2">Contacto</h2>
-            <form action="#">
+            <form  class="formulario-contacto">
                 <fieldset>
                     <legend>Contactanos Rellando Todos Los Campos</legend>
                     
-                    <div>
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" placeholder="Nombre">
-                    </div>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="Nombre">Nombre</label>
+                            <input class="input-text" type="text" placeholder="Nombre">
+                        </div>
 
-                    <div>
-                        <label for="Telefono">Telefono</label>
-                        <input type="text" placeholder="Telefono">
-                    </div>
+                        <div class="campo">
+                            <label for="Telefono">Telefono</label>
+                            <input class="input-text" type="text" placeholder="Telefono">
+                        </div>
 
-                    <div>
-                        <label for="Correo">Correo</label>
-                        <input type="text" placeholder="Email">
-                    </div>
+                        <div class="campo">
+                            <label for="Correo">Correo</label>
+                            <input class="input-text" type="text" placeholder="Email">
+                        </div>
 
-                    <div>
-                        <label for="Mensaje">Mensaje</label>
-                        <textarea name="Mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                        <div class="campo">
+                            <label for="Mensaje">Mensaje</label>
+                            <textarea class="input-text" name="Mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                        </div>
                     </div>
-
-                    <input type="submit" value="Enviar">
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
                 </fieldset>
             </form>
         </section>
+
 
     <!--Fin Formulario Contacto-->
     </main>

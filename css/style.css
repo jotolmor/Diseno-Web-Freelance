@@ -41,6 +41,23 @@ h1, h2, h3, .titulo2{
     font-family: var(--titulos);
     text-align: center;
 }
+.w-sm-100{
+    width: 100%;
+}
+@media (min-width: 768px){
+    .w-sm-100{
+        width: auto;
+    }   
+}
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
 
 /*Fin*/
 
@@ -57,10 +74,6 @@ h1, h2, h3, .titulo2{
 /* Fin*/
 
 /* Navegacion Principal */
-
-.nav-bg{
-    background-color: var(--secundario);
-}
 .navegacion-principal{
     padding: 1rem;
     display: flex;
@@ -125,6 +138,8 @@ h1, h2, h3, .titulo2{
     background-color: var(--secundario);
     padding: 1rem 2rem;
     border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
 }
 .boton:hover{
     background-color: var(--primario);
@@ -188,5 +203,43 @@ h1, h2, h3, .titulo2{
 
 }
 
+/* Fin*/
 
-/* Fin */
+/*Formulario de Contacto*/
+.formulario-contacto{
+    background-color: var(--gris);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: min(60rem, 100%);
+    margin: 2rem auto;
+}
+.formulario-contacto fieldset{
+    border: none;
+}
+.formulario-contacto legend{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    line-height: bold;
+    color: var(--primario);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contenedor-campos{
+
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--blanco);
+}
+.input-text{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+/*Fin Formulario de Contacto*/
